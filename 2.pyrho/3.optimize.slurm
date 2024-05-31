@@ -20,8 +20,8 @@ ne=${2}
 # assumes vcf is name sim_size_ne.vcf.gz
 vcf="../1.simulations/vcfs/sim_${size}_${ne}.vcf.gz"
 # assumes a tab-delimited hyperparam.file with: size ne w bp
-w=`grep "^${size}" hyperparams/hyperparam.file | grep "${ne}" -w |  cut -f 3`
-bp=`grep "^${size}" hyperparams/hyperparam.file | grep "${ne}" -w | cut -f 4`
+w=`grep "^${size}" -w hyperparam.file | grep "${ne}" -w | cut -f 3`
+bp=`grep "^${size}" -w hyperparam.file | grep "${ne}" -w | cut -f 4`
 out="optimize/sim_${size}_${ne}.opt"
 table="tables/sim_${size}_${ne}.table"
 pyrho optimize --vcffile ${vcf} --windowsize ${w} --blockpenalty ${bp} --tablefile ${table} --ploidy 2 --numthreads 12 --outfile ${out}

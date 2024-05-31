@@ -1,0 +1,2 @@
+usage: pyrho <command> <options>
+pyrho: error: unrecognized arguments: 100000 40 60 40 100000 70 20 100000 40 60 40 100000 70 20
