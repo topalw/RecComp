@@ -9,13 +9,13 @@ and the mutation rate [mu] is 1.29e-08.
 
 First, we import stdpopsim
 
-```console
+```python
 import stdpopsim
 ```
 
 Then we run the script bellow in order to obtain all the simulated vcf files
 
-```console
+```python
 #number of samples
 sample_size = [2,4,10,20,50]
 
