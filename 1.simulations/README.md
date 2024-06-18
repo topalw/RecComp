@@ -1,11 +1,17 @@
-#Simulations
+# Simulations 
+
 
 We will be simulating vcf files for the human chromosome 22, by using STDPOPSIM's python API.
+
 The sample sizes will be 2,4,10,20 and 50. Since we are working with diploid
 samples these numbers are doubled.
-The piecewise constant population sizes will be 10.000 and 100.000.
+
+The piecewise constant model was selected for population sizes 10.000 and 100.000.
+
+The selected simulation engine used internally by stdpopsim is MSPRIME.
+
 The genetic map that will be used for the simulations is DeCodeSexAveraged_GRCh38
-and the mutation rate [mu] is 1.29e-08.
+and the mutation rate is 1.29e-08.
 
 First, we import stdpopsim
 
