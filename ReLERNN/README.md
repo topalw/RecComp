@@ -3,7 +3,7 @@
 Simulate, Train and Predict as: 
 
 ```console
-sizes=(2 4 8 20 40 100) 
+sizes=(4 8 20 40 100) 
 
 for i in ${sizes[@]}; do 
 sbatch RELERNN_pipeline.slurm ${i} 10000
