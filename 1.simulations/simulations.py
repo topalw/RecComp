@@ -16,5 +16,5 @@ for i in size:
         samples = {"pop_0": j}
         engine = stdpopsim.get_engine("msprime")
         ts = engine.simulate(model, contig, samples)
-        with open(f"sims_{j}_{i}.vcf", "w") as vcf_file:
+        with open(f"sims_{j*2}_{i}.vcf", "w") as vcf_file:
             ts.write_vcf(vcf_file, contig_id="22")
